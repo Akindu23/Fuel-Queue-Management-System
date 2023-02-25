@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<!-->AnchorPane.setMinSize(20,20);-->
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="750.0" style="-fx-background-color: #000;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.task4.Task4Controller">
+   <children>
+      <Label alignment="CENTER" prefHeight="100.0" prefWidth="750.0" style="-fx-background-color: #a6051a;" text="FUEL QUEUE MANAGEMENT SYSTEM" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="searchBar" layoutX="14.0" layoutY="112.0" prefHeight="47.0" prefWidth="226.0" promptText="Search Customer by First Name" style="-fx-background-color: grey;">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor></TextField>
+      <TextArea fx:id="fuelQueues" editable="false" layoutX="8.0" layoutY="242.0" prefHeight="293.0" prefWidth="369.0" style="-fx-background-color: #87ceeb;">
+         <font>
+            <Font name="Calibri" size="14.0" />
+         </font></TextArea>
+      <Button layoutX="395.0" layoutY="113.0" mnemonicParsing="false" onAction="#viewQueues" prefHeight="41.0" prefWidth="330.0" style="-fx-background-color: #28282b; -fx-border-color: red; -fx-border-width: 2px;" text="View Queue Details" textFill="WHITE">
+         <font>
+            <Font name="Calibri" size="23.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button layoutX="250.0" layoutY="112.0" mnemonicParsing="false" onAction="#searchCustomer" prefHeight="47.0" prefWidth="83.0" style="-fx-background-color: #28282b; -fx-border-color: red; -fx-border-width: 1.5px;" text="Search" textFill="WHITE">
+         <font>
+            <Font name="Calibri" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <TextArea fx:id="waitingQueue" editable="false" layoutX="375.0" layoutY="242.0" prefHeight="293.0" prefWidth="369.0" style="-fx-background-color: #87ceeb;">
+         <font>
+            <Font name="Calibri" size="14.0" />
+         </font>
+      </TextArea>
+      <Label alignment="CENTER" layoutX="132.0" layoutY="201.0" prefHeight="25.0" prefWidth="150.0" text="Fuel Queues" textFill="WHITE">
+         <font>
+            <Font name="Calibri" size="24.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="460.0" layoutY="196.0" prefHeight="40.0" prefWidth="200.0" text="Waiting Queue" textFill="WHITE">
+         <font>
+            <Font name="Calibri" size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
